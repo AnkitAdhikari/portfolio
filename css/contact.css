@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 0.8fr;
   padding: 6.4rem;
-  height: 80vh;
 }
 
 .contact-form,
@@ -51,6 +50,7 @@ textarea:focus-visible {
 form div {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .name-input {
@@ -97,4 +97,43 @@ input[type="submit"]:hover {
 
 .img {
   width: 100%;
+}
+
+@media (max-width: 400px) {
+  body {
+    overflow: hidden;
+  }
+  .container-contacts {
+    grid-template-columns: 1fr;
+    padding: 0 2.6rem;
+  }
+  .contact-img {
+    display: none;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-heading {
+    font-size: 4rem;
+    border-bottom: 0.5rem solid #00adb5;
+    margin: 1rem 0 5rem;
+    width: 100%;
+  }
+
+  form {
+    gap: 2rem;
+    width: 100%;
+  }
+
+  form div {
+    gap: 2rem;
+  }
+
+  .name-input,
+  .message-box,
+  .email-input {
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+  }
 }

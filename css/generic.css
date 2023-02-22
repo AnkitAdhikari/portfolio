@@ -152,16 +152,24 @@ main {
 
 /* 2 / 4 / 8 / 12 / 16 / 24 */
 
+header {
+  position: relative;
+}
+
 .sec-nav {
   box-shadow: 0 1.2rem 6.4rem rgba(36, 198, 220, 0.15);
+  position: absolute;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   background-color: #282b31;
-  width: fit-content;
+  /* width: fit-content; */
   border-radius: 100rem;
   overflow: hidden;
   padding: 0.7rem 0.7rem;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .sec-nav ul {
@@ -190,6 +198,9 @@ main {
 }
 
 @media (max-width: 400px) {
+  body {
+    overflow: hidden;
+  }
   main {
     display: grid;
     grid-template-columns: 10% 80% 10%;
@@ -197,8 +208,8 @@ main {
   }
 
   .aside-calender {
-    justify-content: space-around;
-    font-size: 2rem;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
   }
 
   .icons {
@@ -210,7 +221,7 @@ main {
   }
 
   .sec-nav {
-    position: absolute;
-    bottom: 2rem;
+    bottom: 7rem;
+    width: 100%;
   }
 }

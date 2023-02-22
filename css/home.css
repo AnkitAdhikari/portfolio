@@ -5,8 +5,12 @@
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  height: 80vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
 }
 
 .cta {
@@ -99,14 +103,19 @@
 
 /* Responsive CSS */
 @media (max-width: 400px) {
-  body {
-    color: #514a9d;
-  }
-
   .hero {
     grid-template-columns: 1fr;
+    height: auto;
   }
   .hero-container {
     display: none;
+  }
+  header {
+    gap: 10rem;
+  }
+
+  .heading {
+    font-size: 7.8rem;
+    font-weight: 500;
   }
 }
