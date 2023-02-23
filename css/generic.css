@@ -1,6 +1,7 @@
 /* 
-dark : #222831
-grey-color : #393E46
+color-primary : #222831 #393E46
+grey-color : #2e3238 
+icons-color : #61656b
 
 Accent : #00ADB5
 
@@ -20,6 +21,10 @@ font-family: 'Tourney', cursive;
 
 
 */
+
+/* THIS STYLE SHEET IS APPLIED TO EVERY PAGE IN WEB SITE */
+/* THIS PROVIDES BASIC STRUCTURE OF 3 COLUMN GIRD FOR 1 PAGE LAYOUT */
+
 * {
   padding: 0;
   margin: 0;
@@ -27,6 +32,8 @@ font-family: 'Tourney', cursive;
 }
 
 html {
+  /* now 1rem --> 10px */
+  /* it make font adjust according to user browser font setting */
   font-size: 62.5%;
 }
 

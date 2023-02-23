@@ -2,6 +2,8 @@
   height: 89.5vh;
 } */
 
+/* SPECIFIC CODE FOR INDEX PAGE */
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,6 +67,8 @@ header {
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.5);
   background-image: linear-gradient(to right, #f12711, #f5af19);
 } */
+
+/* USED CSS GENERATOR */
 
 .btn-cta {
   background: #24c6dc;
