@@ -10,7 +10,7 @@
 header {
   display: flex;
   flex-direction: column;
-  gap: 20rem;
+  gap: 13rem;
 }
 
 .cta {
