@@ -30,7 +30,6 @@ function showClock() {
     "Monday",
     "Tuesday",
     "Wednesday",
-    "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
